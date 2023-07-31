@@ -1,12 +1,7 @@
-function decimalToBinary(num) {
-  // Write your code here
-	let binStr = "";
-	while(num !== 0){
-		let rem = num%2;
-		binStr+=rem;
-		num = Math.floor(num/2);
-	}
-	return binStr.split("").reverse().join("");
+function decimalToBinary(decimal) {
+  return decimal.toString(2);
 }
-
-window.decimalToBinary = decimalToBinary;
+ 
+console.log(decimalToBinary(7));
+console.log(decimalToBinary(10)); 
+console.log(decimalToBinary(33)); 
